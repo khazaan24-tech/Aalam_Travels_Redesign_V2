@@ -1,0 +1,9 @@
+/* Background depth: the content itself stays sharp and interactive. */
+body.outbound-design{background-image:none;position:relative;isolation:isolate}
+body.outbound-design::before{content:'';position:fixed;inset:-30px;z-index:-2;pointer-events:none;background-image:url('contours.svg');background-size:1150px;background-position:center;filter:blur(2.8px);opacity:.72;transform:scale(1.035)}
+body.outbound-design::after{content:'';position:fixed;inset:-80px;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 8% 28%,#92ab5655,transparent 43%),radial-gradient(ellipse at 85% 60%,#12240db0,transparent 52%),radial-gradient(ellipse at 65% 6%,#c5d59422,transparent 42%);filter:blur(48px);opacity:.8}
+.hero-photo{box-shadow:0 35px 80px #13200b65}
+.glass,.tour-card,.map-shell{backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);box-shadow:0 22px 45px #101d0b40}
+.tour-card:hover,.tour-card:focus-within{box-shadow:0 30px 55px #101d0b70}
+@media(max-width:760px){body.outbound-design::before{filter:blur(2px)}body.outbound-design::after{filter:blur(30px)}}
+.map-legend{align-items:center;flex-wrap:wrap}.map-legend button{background:#ffffff0b;color:var(--ink);border:1px solid var(--line);padding:8px 12px;font-size:9px;min-height:36px}
